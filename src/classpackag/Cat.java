@@ -4,6 +4,7 @@ public class Cat {
     String breed;
     String color;
     int hp =10;
+    int attack = 1;
 
     Cat(){
         System.out.println("Cat() 생성자를 호출");

@@ -31,29 +31,31 @@ public class Example04 {
             System.out.println(); // 줄바꿈용
             System.out.println("공격 또는 도망");
             System.out.println("현재 고양이 체력 : " + cat3.hp + " 플레이어 체력 : " + player.hp);
+            System.out.println("================================");
             System.out.println("[플레이어 차례]");
             String atk = s.nextLine();
 
-            if(atk.equals("공격")){
-                if(chancePlayer < 7) {
+            if(atk.equals("공격")) {
+                if (chancePlayer < 7) {
                     System.out.println("공격 성공\n");
                     cat3.hp = cat3.hp - 1;
-                }else {
+                } else {
                     System.out.println("고양이가 회피 했다\n");
                 }
             }
+            System.out.println("================================");
             System.out.println("[고양이 차례]");
             int chanceCat = ThreadLocalRandom.current().nextInt(10);
             if(chanceCat < 3){
                 player.hp--;
-                System.out.println("긁혔다! 남은 체력 : " + player.hp +"\n");
-            }else if(chanceCat > 3 && chanceCat < 9){
-                System.out.println("고양이가 잠잠히 있다\n");
+                System.out.println("긁혔다! 남은 체력 : " + player.hp);
+            }else if(chanceCat >= 3 && chanceCat < 9){
+                System.out.println("고양이가 잠잠히 있다");
             }else if(chanceCat >= 9){
-                System.out.println("고양이가 도망쳤다\n");
+                System.out.println("고양이가 도망쳤다");
                 break;
             }
-
+            System.out.println("================================");
             if (cat3.hp == 0){
                 System.out.println("고양이를 잡았다");
                 break;
