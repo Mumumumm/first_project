@@ -3,6 +3,7 @@ package classpackag;
 public class Cat {
     String breed;
     String color;
+    int age =10;
 
     Cat(){
         System.out.println("Cat() 생성자를 호출");
@@ -11,10 +12,11 @@ public class Cat {
         System.out.println("Cat(...) 생성자를 호출");
         this.breed = pBreed;
     }
-    Cat(String pBreed, String pColor){
+    Cat(String pBreed, String pColor, int pAge){
         System.out.println("Cat(..., ...) 생성자 호출");
         this.breed = pBreed;
         this.color = pColor;
+        this.age = pAge;
     }
 
     void eat(){
