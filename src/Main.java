@@ -125,17 +125,17 @@ public class Main {
 //        String str = input.nextLine();
 //        System.out.println("내가 입력한 문자열은 : " + str + " 입니다.");
 
-        int max;
-        int min;
-        System.out.println("숫자를 입력하세요");
-        int result = input.nextInt();
-        int result2 = input.nextInt();
-        if(result > result2){
-             max = result;
-        }else if (result < result2){
-            min = result;
-        }
-        System.out.println("큰숫자 : " + result);
+//        int max;
+//        int min;
+//        System.out.println("숫자를 입력하세요");
+//        int result = input.nextInt();
+//        int result2 = input.nextInt();
+//        if(result > result2){
+//             max = result;
+//        }else if (result < result2){
+//            min = result;
+//        }
+//        System.out.println("큰숫자 : " + result);
 
 
 //        for (int num = 0; num < 10 ; num++){
@@ -143,6 +143,8 @@ public class Main {
 //            result = input.nextInt();
 //        };
 
+        KittenCat kitten = new KittenCat("김준홍","김서서");
+        Child2 hong = new Child2();
 
     }
 }
